@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 const ContactItem = ({ contact, onDeleteContact }) => (
   <li className={styles.button} >
     {contact.name} - {contact.number}
-    <button  onClick={() => onDeleteContact(contact.id)}>Delete</button>
+    <button onClick={() => {
+      console.log("Deleting contact with id:", contact.id);
+      onDeleteContact(contact.id);
+    }}>Delete</button>
   </li>
 );
 
