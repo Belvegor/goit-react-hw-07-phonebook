@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.button {
+    display: flex;
+    gap: 20px;
+}
